@@ -3,6 +3,13 @@
   "license": "MIT",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
+  "homepage": "https://github.com/Domin-MND/ikota-plugins/tree/master/example",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Domin-MND/ikota-plugins.git",
+    "directory": "example"
+  },
+  "bugs": "https://github.com/Domin-MND/ikota-plugins/issues",
   "files": [
     "dist",
     "src"

@@ -1,5 +1,5 @@
 <p align="center">
-  <img alt="ikota" src="public/ikotastylus.svg" width="300" />
+  <img alt="ikota" src="example/public/ikotastylus.svg" width="300" />
 </p>
 
 # Overview
@@ -50,7 +50,7 @@ config, otherwise it would throw an error.
 ## Example
 
 <p align="center">
-  <img alt="Generating the component with Stylus" src="public/generatecomponent.png" width="40%" />
+  <img alt="Generating the component with Stylus" src="example/public/generatecomponent.png" width="40%" />
 </p>
 
 # Contributing
