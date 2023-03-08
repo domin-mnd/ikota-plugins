@@ -1,4 +1,4 @@
-import { Button, Paper, Text, Group, CloseButton } from "@mantine/core";
+export default `import { Button, Paper, Text, Group, CloseButton } from "@mantine/core";
 
 export const {{componentName}}{{useTypescript}} => (
   <Paper{{paperInline}}{{cardClassName}}>
@@ -20,4 +20,4 @@ export const {{componentName}}{{useTypescript}} => (
       </Button>
     </Group>
   </Paper>
-);
+);`

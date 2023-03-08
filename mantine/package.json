@@ -1,5 +1,5 @@
 {
-  "version": "1.0.0",
+  "version": "0.9.9",
   "license": "MIT",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
@@ -61,6 +61,6 @@
     "typescript": "^4.9.5"
   },
   "dependencies": {
-    "ikota": "^1.0.0"
+    "ikota": "^1.0.1"
   }
 }
