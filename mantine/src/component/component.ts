@@ -1,4 +1,5 @@
 import { IkotaConfig } from 'ikota';
+import { capitalCase } from '../utils/capitalCase';
 import inlineStyles from '../templates/inlineStyles';
 import inlineStylesSimplified from '../templates/inlineStylesSimplified';
 
@@ -19,7 +20,7 @@ export function component(config: IkotaConfig, name: string): string {
   let file = config.useLambdaSimplifier ? inlineStylesSimplified : inlineStyles;
 
   file = file
-    .replace("{{componentName}}", name)
+    .replace("{{componentName}}", capitalCase(name))
     .replace("{{useTypescript}}", config.useTypescript ? ": FunctionComponent = (): ReactElement" : " = ()")
     .replace("{{useStyles}}", "\n  const { classes } = useStyles();\n") // with lambda simplifier there's no space for styles
     .replace("{{cardClassName}}", !config.useLambdaSimplifier ? " className={classes.card}" : "")
