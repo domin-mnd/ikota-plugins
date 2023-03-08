@@ -9,14 +9,14 @@ import { capitalCase } from '../utils/capitalCase';
  */
 export function component(config: IkotaConfig, name: string): string {
   // Here you can add a line to import a styling file
-  // Types are imported automatically: FunctionComponent & ReactElement
 
   // You can use `` with multiple lines instead of an
   // array joined with \n, but for the sake of
   // indentation I left it this way
 
   let response = `import classes from "./styles.module.styl";\n`;
-  response += config.addConfigFile ? `import { buttonLabel } from "./config";\n` : "";
+  if (config.useTypescript) response += 'import type { FunctionComponent, ReactElement } from "react";\n';
+  if (config.addConfigFile) response += `import { buttonLabel } from "./config";\n`;
 
   // Whitespace
   response += "\n";

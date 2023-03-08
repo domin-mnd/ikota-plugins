@@ -12,7 +12,8 @@ import inlineStylesSimplified from '../templates/inlineStylesSimplified';
 export function component(config: IkotaConfig, name: string): string {
   let response = !config.useLambdaSimplifier ? `import { useStyles } from "./styles";\n` : "";
 
-  response += config.addConfigFile ? `import { cardLabel, description, defaultButton, outlineButton } from "./config";\n` : "";
+  if (config.useTypescript) response += 'import type { FunctionComponent, ReactElement } from "react";\n';
+  if (config.addConfigFile) response += `import { cardLabel, description, defaultButton, outlineButton } from "./config";\n`;
 
   // Spaces for description
   const spaces = config.useLambdaSimplifier ? " ".repeat(6) : " ".repeat(8);

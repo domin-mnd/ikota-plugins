@@ -9,7 +9,7 @@ import { IkotaConfig } from "ikota";
 export async function styles(config: IkotaConfig, _name: string): Promise<string> {
   return `import { createStyles${config.useTypescript ? ", MantineTheme" : ""} } from "@mantine/core";
 
-const useStyles = createStyles((theme${config.useTypescript ? ": MantineTheme" : ""}) => ({
+export const useStyles = createStyles((theme${config.useTypescript ? ": MantineTheme" : ""}) => ({
   card: {
     backgroundColor: theme.colorScheme === 'dark' ? theme.colors.dark[7] : theme.white,
   }

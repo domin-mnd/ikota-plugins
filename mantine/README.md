@@ -1,19 +1,17 @@
-> TODO
-
 <p align="center">
-  <img alt="ikota" src="public/ikotastylus.svg" width="300" />
+  <img alt="ikota" src="public/ikotamantine.svg" width="200" />
 </p>
 
 # Overview
 
 Ikota (Russian word for "hiccups", pronounced `/ikóta/`) is a CLI
 automation tool for working with React. This plugin offers a
-stylus preprocessor implementation for ikota.
+mantine preprocessor implementation for ikota.
 
 # Install
 
 ```bash
-$ npm i ikota @ikota/example
+$ npm i ikota @ikota/mantine
 $ ikota config # or
 $ npx ikota config
 ```
@@ -26,16 +24,15 @@ const ikotaMantine = require("@ikota/mantine");
 
 module.exports = {
   componentPath: "src/components",
-  useTypescript: false,
+  useTypescript: true,
   addConfigFile: true,
   addIndexFile: true,
   preprocessor: "mantine",
-  useLambdaSimplifier: true,
+  useLambdaSimplifier: true, // Won't import useStyles if set to true
   trailingSpace: true,
   plugins: [ikotaMantine],
   other: {
-    styleProps: true,
-    JSDoc: true
+    styleProps: true // Use inline props?
   }
 }
 ```
@@ -47,7 +44,7 @@ above or override the preprocessor set by the config using `-P`
 flag:
 
 ```bash
-$ ikota component -P example-styl
+$ ikota component -P mantine
 ```
 
 > **Note**: Make sure to add plugin in the plugins array of the
@@ -56,7 +53,7 @@ config, otherwise it would throw an error.
 ## Example
 
 <p align="center">
-  <img alt="Generating the component with Stylus" src="public/generatecomponent.png" width="40%" />
+  <img alt="Generating the component with Mantine" src="public/generatecomponent.png" width="40%" />
 </p>
 
 # Contributing
