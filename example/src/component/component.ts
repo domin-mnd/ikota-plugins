@@ -31,7 +31,7 @@ export function component(config: IkotaConfig, name: string): string {
         config.addConfigFile ? "{buttonLabel}" : "Button"
       }</button>`,
       "  </div>",
-      ")",
+      ");",
     ].join("\n");
   } else {
     response += [
