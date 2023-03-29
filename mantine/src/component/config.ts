@@ -18,7 +18,7 @@ export const description: string = [
   "breakfast, where do you live, how much do you earn and like 50 other things. To view our",
   "landing page you will have to accept all cookies. That's all, and remember that we are",
   "watching..."
-].join(" ")
+].join(" ");
 
 export const defaultButton: string = "Cookies preferences";
 
@@ -30,7 +30,7 @@ export const description = [
   "breakfast, where do you live, how much do you earn and like 50 other things. To view our",
   "landing page you will have to accept all cookies. That's all, and remember that we are",
   "watching..."
-].join(" ")
+].join(" ");
 
 export const defaultButton = "Cookies preferences";
 
