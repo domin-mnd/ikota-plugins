@@ -50,7 +50,7 @@ $ ikota component -P vanilla-extract
 ## Example
 
 <p align="center">
-  <img alt="Generating the component with Stylus" src="public/generatecomponent.png" width="40%" />
+  <img alt="Generating the component with Vanilla-extract" src="public/generatecomponent.png" width="40%" />
 </p>
 
 # Contributing
