@@ -1,0 +1,66 @@
+{
+  "version": "1.0.0",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "homepage": "https://github.com/Domin-MND/ikota-plugins/tree/master/vanilla-extract",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Domin-MND/ikota-plugins.git",
+    "directory": "vanilla-extract"
+  },
+  "bugs": "https://github.com/Domin-MND/ikota-plugins/issues",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "engines": {
+    "node": ">=10"
+  },
+  "scripts": {
+    "start": "tsdx watch",
+    "build": "tsdx build",
+    "test": "tsdx test",
+    "lint": "tsdx lint",
+    "prepare": "tsdx build",
+    "size": "size-limit",
+    "analyze": "size-limit --why"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "tsdx lint"
+    }
+  },
+  "prettier": {
+    "printWidth": 80,
+    "semi": true,
+    "singleQuote": true,
+    "trailingComma": "es5"
+  },
+  "name": "@ikota/vanilla-extract",
+  "description": "Vanilla-extract preprocessor plugin for ikota CLI",
+  "author": "Domin-MND",
+  "module": "dist/vanilla-extract.esm.js",
+  "size-limit": [
+    {
+      "path": "dist/vanilla-extract.cjs.production.min.js",
+      "limit": "10 KB"
+    },
+    {
+      "path": "dist/vanilla-extract.esm.js",
+      "limit": "10 KB"
+    }
+  ],
+  "devDependencies": {
+    "@size-limit/preset-small-lib": "^8.2.4",
+    "@types/jest": "^29.4.0",
+    "husky": "^8.0.3",
+    "size-limit": "^8.2.4",
+    "tsdx": "^0.14.1",
+    "tslib": "^2.5.0",
+    "typescript": "^4.9.5"
+  },
+  "dependencies": {
+    "ikota": "^1.0.1"
+  }
+}

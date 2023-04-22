@@ -50,6 +50,7 @@ preprocessors & much more. Some of the examples would be:
 
 - [`@ikota/example`](https://github.com/Domin-MND/ikota-plugins/tree/master/example) - An example plugin implementing `Stylus` preprocessor
 - [`@ikota/mantine`](https://github.com/Domin-MND/ikota-plugins/tree/master/mantine) - A mantine preprocessor (template) implementation for ikota.
+- [`@ikota/vanilla-extract`](https://github.com/Domin-MND/ikota-plugins/tree/master/vanilla-extract) - A vanilla-extract preprocessor (template) implementation for ikota.
 - more soon...
 
 ## Create a plugin
